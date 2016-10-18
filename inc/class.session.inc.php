@@ -39,7 +39,7 @@ class session  {
 		 return true;   
 		}
 	}
-	public function begin_database_session($username, $user_id) {
+	public function begin_database_session($user_id) {
 			$unique = substr(md5(rand()), 0, 30);
 			$_SESSION['HTTP_USER_AGENT'] = md5($_SERVER['HTTP_USER_AGENT']); 
 			$_SESSION['UNIQUE_ID'] = $unique;
